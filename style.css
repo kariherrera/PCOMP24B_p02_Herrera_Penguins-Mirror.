@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    body {
+      margin:0px;
+      background:black ;
+      font-family:inter;
+    }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0 40px;
+  margin: 0;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.navbar ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+}
+
+.navbar ul li a:hover {
+  color: lightyellow;
+  text-decoration: underline;
+}
+
+
+
+#titulo {
+  position: relative;
+  background-image: url('imagenes/gift1.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:760px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titulo h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 300px 450px;
+  border:solid 1px white;
+}
+
+.autor {
+  position: relative;
+  background-image: url('imagenes/daniel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+.autor h2 {
+  color: white;
+  display: inline-block;
+  margin-block-end: 0px;
+  margin-block-start: 80px;
+  font-size: 3rem;
+  padding:0px 40px;
+}
+
+.autor p {
+  max-width: 430px;
+  padding: 0px 40px; 
+  font-size: 15px;
+  color:white;
+}
+
+ .caja {
+  position: absolute;
+  top:230px;
+  left:555px;
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+  border: 1px solid white;
+}
+
+.caja::before,
+.caja::after,
+.caja span::before,
+.caja span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* esquina superior izquierda */
+.caja::before {
+  top: -5px;
+  left: -5px;
+}
+
+/* esquina superior derecha */
+.caja::after {
+  top: -5px;
+  right: -5px;
+}
+
+/* esquina inferior izquierda */
+.caja span::before {
+  bottom: -5px;
+  left: -5px;
+}
+
+
+.caja span::after {
+  bottom: -5px;
+  right: -5px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-content {
+  max-width: 900px;
+  text-align: left;
+}
+
+.about-content h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.representacion {
+  color: white;
+  font-size: 25;
+}
+
+#contenedor-cajas {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.fila {
+  display: flex;
+  gap: 20px;
+}
+
+.fila.superior {
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.fila.inferior {
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.caja-info {
+  max-width: 260px;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.caja-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.caja-info p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.principios {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+.principios h2 {
+  font-size: 3rem;
+  color: white;
+  text-align: left;
+  max-width: 400px;
+}
+
+
+#funcionamiento {
+  position: relative;
+  background-image: url('imagenes/gift2.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#funcionamiento h2 {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top:140px;
+  left:480px;
+}
+
+#funcionamiento .diagrama {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: 1200px;
+  height: auto;
+  z-index: 2;
+}
