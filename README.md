@@ -1,2 +1,2 @@
-# PCOMP24B_p02_Herrera_Penguins-Mirror.
- PCOMP 2024B, P02, Penguins Mirror, Integrantes: Alegría Maria Jesus, Cabrales Francesca, Herrera Karina, Vega Sofía, Verdugo Sofía
+# 21679574-1github/pcomp2024b_p02_Prenguin Mirror_Herrera
+P02, Alegría, Cabrales, Herrera, Vega, Verdugo
